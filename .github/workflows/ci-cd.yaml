@@ -5,10 +5,14 @@ on:
     branches:
       - main # Production branch
       - develop # Staging branch
+      - feature/*
+      - clean-develop
   pull_request:
     branches:
       - main
       - develop
+      - feature/*
+      - clean-develop
   workflow_dispatch: # Manuel tetikleme için
 
 env:
